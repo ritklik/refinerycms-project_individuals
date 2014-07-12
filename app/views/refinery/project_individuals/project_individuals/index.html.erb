@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="project_individuals">
+    <% @project_individuals.each do |project_individual| %>
+      <li>
+        <%= link_to project_individual.name, refinery.project_individuals_project_individual_path(project_individual) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

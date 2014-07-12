@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      project_individuals:
+        title: Project Individuals
+    project_individuals:
+      admin:
+        project_individuals:
+          actions:
+            create_new: Nieuwe Project Individual toevoegen
+            reorder: De volgorde van de Project Individuals wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Project Individual-volgorde
+          records:
+            title: Project Individuals
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Project Individuals. Druk op 'Nieuwe Project Individual toevoegen' om de eerste toe te voegen.
+          project_individual:
+            view_live_html: Deze project individual op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze project individual
+            delete: Deze project individual definitief verwijderen
+      project_individuals:
+        show:
+          other: Andere Project Individuals
+  activerecord:
+    attributes:
+      'refinery/project_individuals/project_individual':
+        name: Name
+        category: Category
+        image_thumb: Image Thumb
+        image_full: Image Full
+        description: Description

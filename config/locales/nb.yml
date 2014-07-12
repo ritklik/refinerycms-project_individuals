@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      project_individuals:
+        title: Project Individuals
+    project_individuals:
+      admin:
+        project_individuals:
+          actions:
+            create_new: Lag en ny Project Individual
+            reorder: Endre rekkefølgen på Project Individuals
+            reorder_done: Ferdig å endre rekkefølgen Project Individuals
+          records:
+            title: Project Individuals
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Project Individuals enda. Klikk på "Lag en ny Project Individual" for å legge til din første project individual.
+          project_individual:
+            view_live_html: Vis hvordan denne project individual ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne project individual
+            delete: Fjern denne project individual permanent
+      project_individuals:
+        show:
+          other: Andre Project Individuals
+  activerecord:
+    attributes:
+      'refinery/project_individuals/project_individual':
+        name: Name
+        category: Category
+        image_thumb: Image Thumb
+        image_full: Image Full
+        description: Description

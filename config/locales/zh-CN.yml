@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      project_individuals:
+        title: Project Individuals
+    project_individuals:
+      admin:
+        project_individuals:
+          actions:
+            create_new: 建立新的 Project Individual
+            reorder: 对 Project Individuals 重新排序
+            reorder_done: 对 Project Individuals 的重新排序结束
+          records:
+            title: Project Individuals
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Project Individuals yet. Click "Add New Project Individual" to add your first project individual.
+            no_items_yet: 目前没有 Project Individuals . 点击 "Add New Project Individual" 创建一个project individual.
+          project_individual:
+            view_live_html: 查看 project individual 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 project individual
+            delete: 永久删除 project individual
+      project_individuals:
+        show:
+          other: 其他 Project Individuals
+  activerecord:
+    attributes:
+      'refinery/project_individuals/project_individual':
+        name: Name
+        category: Category
+        image_thumb: Image Thumb
+        image_full: Image Full
+        description: Description

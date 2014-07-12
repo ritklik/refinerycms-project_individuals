@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      project_individuals:
+        title: Project Individuals
+    project_individuals:
+      admin:
+        project_individuals:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Project Individual
+            reorder: Réordonner les Project Individuals
+            reorder_done: Fin de réordonnancement des Project Individuals
+          records:
+            title: Project Individuals
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Project Individual. Cliquer sur "Créer un(e) nouve(au/l/lle) Project Individual" pour créer votre premi(er/ère) project individual.'
+          project_individual:
+            view_live_html: Voir ce(t/tte) project individual <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) project individual
+            delete: Supprimer définitivement ce(t/tte) project individual
+      project_individuals:
+        show:
+          other: Autres Project Individuals
+  activerecord:
+    attributes:
+      'refinery/project_individuals/project_individual':
+        name: Name
+        category: Category
+        image_thumb: Image Thumb
+        image_full: Image Full
+        description: Description

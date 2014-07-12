@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      project_individuals:
+        title: Project Individuals
+    project_individuals:
+      admin:
+        project_individuals:
+          actions:
+            create_new: Add New Project Individual
+            reorder: Reorder Project Individuals
+            reorder_done: Done Reordering Project Individuals
+          records:
+            title: Project Individuals
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Project Individuals yet. Click "Add New Project Individual" to add your first project individual.
+          project_individual:
+            view_live_html: View this project individual live <br/><em>(opens in a new window)</em>
+            edit: Edit this project individual
+            delete: Remove this project individual forever
+      project_individuals:
+        show:
+          other: Other Project Individuals
+  activerecord:
+    attributes:
+      'refinery/project_individuals/project_individual':
+        name: Name
+        category: Category
+        image_thumb: Image Thumb
+        image_full: Image Full
+        description: Description

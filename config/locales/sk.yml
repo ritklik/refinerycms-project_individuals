@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      project_individuals:
+        title: Project Individuals
+    project_individuals:
+      admin:
+        project_individuals:
+          actions:
+            create_new: Pridať Project Individual
+            reorder: Preusporiadať Project Individuals
+            reorder_done: Koniec radenia Project Individuals
+          records:
+            title: Project Individuals
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Project Individuals. Kliknite na "Pridať Project Individual" pre pridanie prvého project individual.
+          project_individual:
+            view_live_html: Zobraziť náhľad project individual<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť project individual
+            delete: Zmazať project individual
+      project_individuals:
+        show:
+          other: Daľšie Project Individuals
+  activerecord:
+    attributes:
+      'refinery/project_individuals/project_individual':
+        name: Name
+        category: Category
+        image_thumb: Image Thumb
+        image_full: Image Full
+        description: Description

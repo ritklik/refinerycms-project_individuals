@@ -1,0 +1,53 @@
+<%= form_for [refinery, :project_individuals_admin, @project_individual] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @project_individual,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :category -%>
+    <%= f.text_field :category -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_thumb -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_thumb_id,
+               :image => @project_individual.image_thumb,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_full -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_full_id,
+               :image => @project_individual.image_full,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "project_individuals/project_individual" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.project_individuals.admin.project_individuals.project_individual'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @project_individual.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>
